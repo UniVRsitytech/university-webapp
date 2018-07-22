@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
 import '../../assets/css/main.css';
 import '../../assets/css/noscript.css';
-
+import ShowMission from './Show-Mission/showMission';
 
 class Mission extends Component {
+    constructor() {
+        super();
+        this.state = {
+            isOpened : false,
+        };
+        this.toggleOpened = this.toggleOpened.bind(this);   
+    }
+    toggleOpened() {
+        this.setState({
+            isOpened : !this.state.isOpened
+        })
+        console.log(this.state.isOpened);
+    }
     render() {
         return (
-            //     <button className="square" onClick={() => alert('click')}>
-            //     {this.props.value}
-            //   </button>
             <div id="wrapper" class="divided">
                 <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
                     <div class="content">
@@ -17,7 +27,7 @@ class Mission extends Component {
                         <h1 styles={{paddingBottom:'8px'}}>"Learning as an experience"</h1>
                         <ul class="actions stacked">
                             <li>
-                                <a id="button1" class="button big wide smooth-scroll-middle">Learn more</a>
+                                <button class="button" onClick={this.toggleOpened}>Learn More</button>
                             </li>
                         </ul>
                     </div>
@@ -26,6 +36,7 @@ class Mission extends Component {
                         <img src={ require('../../assets/images/banner.jpg') } />
                     </div>
                 </section>
+                <ShowMission toggleComp={this.state.isOpened}/>
             </div>
         );
     }
