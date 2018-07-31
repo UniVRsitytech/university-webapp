@@ -10,7 +10,11 @@ import TestPar from './Components/Parallax/testparallax'
 import SandboxPar from './Components/Parallax/sandbox'
 import AppBar from './Components/ScrollAppBar'
 import Footer from './Components/Footer'
+import Button from '@material-ui/core/Button';
+
 import { Parallax } from 'react-parallax';
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 //ignore, this is stuff I'm playing with for Material-UI override
 // import { render } from "react-dom";
@@ -38,19 +42,63 @@ const image3 = "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627
 //https://github.com/RRutsche/react-parallax
 
 class App extends Component {
-  render() {
-    //idk what this here is
 
-    // const name = 'Josh Perez';
-    // const element = <h1>Hello, {name}</h1>;
-    // function Welcome(props) {
-    //   return <h1>Hello, {props.name}</h1>;
-    // }
+  constructor(props) {
+    super(props);
+    // Don't call this.setState() here!
+    // this.state = { counter: 0 };
+    // this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function (to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function (to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+
+  scrollTo() {
+    scroll.scrollTo(100);
+  }
+
+  scrollMore() {
+    scroll.scrollMore(100);
+  }
+
+  handleSetActive(to) {
+    console.log(to);
+  }
+
+  render() {
+
     return (
       <div>
 
         <div>
           <AppBar />
+          <Link activeClass="active" to="test" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+            <Button>
+              Scroll Down
+            </Button>
+          </Link>
         </div>
 
         <Parallax bgImage={image1}
@@ -69,8 +117,9 @@ class App extends Component {
           </div>
         </Parallax>
 
-        <VirtualRealityPlatform />
-
+        <Element name="test" className="element">
+          <VirtualRealityPlatform />
+        </Element>
         <Parallax bgImage={image1}
           strength={500}>
           <div style={{ height: 500 }}>
