@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './assets/css/layout.css';
 import Mission from './Components/Mission/Mission.js'
-import MeetTheTeam from './Components/Meet-The-Team/MeetTheTeam.js'
-import VirtualRealityPlatform from './Components/Virutal-Reality-Platform/virtualRealityPlatform';
-import InteractiveExperiences from './Components/Interactive-Experiences/interactiveExperiences';
-import TeamLayout from './Components/Meet-The-Team/TeamLayout'
+import MeetTheTeam from './Components/Team/team'
+import About from './Components/About/about';
+import Solutions from './Components/Solutions/solutions';
+import Partners from './Components/Partners/partners';
+import TeamLayout from './Components/Team/TeamLayout'
 import TestPar from './Components/Parallax/testparallax'
 import SandboxPar from './Components/Parallax/sandbox'
 import AppBar from './Components/ScrollAppBar'
@@ -34,10 +36,12 @@ const styles = {
   textAlign: 'center',
 };
 const insideStyles = { background: 'white', padding: 20, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' };
-const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
-const image2 = "https://img00.deviantart.net/2bd0/i/2009/276/c/9/magic_forrest_wallpaper_by_goergen.jpg";
-const image3 = "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001";
-
+// const insideStyles = { background: 'white', transform: 'translate(-50%,-50%)' };
+const image1 = require('./assets/images/banner.jpg');
+const image2 = require('./assets/images/gouser.jpg');
+const image3 = require('./assets/images/team.png');
+const image4 = require('./assets/images/gouser2.jpg');
+const def = require('./assets/images/pic02.jpg');
 //read the following for documentation on the Parallax Component
 //https://github.com/RRutsche/react-parallax
 
@@ -88,6 +92,9 @@ class App extends Component {
   }
 
   render() {
+    const titleStyles = { fontFamily: 'sanserif', color: 'white', fontSize: "60pt" };
+    const bodyStyles = { fontFamily: 'sanserif', color: 'white', fontSize: "22pt" };
+
 
     return (
       <div>
@@ -101,49 +108,90 @@ class App extends Component {
           </Link>
         </div>
 
-        <Parallax bgImage={image1}
-          strength={500}>
-          <div style={{ height: 500 }}>
-            <div style={insideStyles}>HTML inside the parallax</div>
+        <Parallax
+          bgImage={image1}
+          strength={400}
+          blur={2}>
+          <div style={{ height: 700 }}>
+            <div style={titleStyles} class="margin-2x">
+              Remote Learning
+              <br />
+              Made Easy
+            </div>
           </div>
         </Parallax>
 
         <Mission />
 
-        <Parallax bgImage={image1}
-          strength={500}>
-          <div style={{ height: 500 }}>
-            <div style={insideStyles}>HTML inside the parallax</div>
+        <Parallax bgImage={image2}
+          strength={400}>
+          <div style={{ height: 700 }}>
+            <div class="div-right">
+              <p style={titleStyles} class="margin-2x text-left">About</p>
+              <br />
+              <p style={bodyStyles} class="margin-2x text-left">
+                Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
+                vis ad suscipit moderatius. moderatius. Mundi primis <br />
+                antiopam mel ea. Pro graecis commune cotidieque cu,<br />
+                et diceret splendide pro. At nam dicta recusabo <br />
+                maiestatis. Ancillae atomorum no nec.
+              </p>
+            </div>
           </div>
         </Parallax>
 
-        <Element name="test" className="element">
-          <VirtualRealityPlatform />
-        </Element>
-        <Parallax bgImage={image1}
-          strength={500}>
-          <div style={{ height: 500 }}>
-            <div style={insideStyles}>HTML inside the parallax</div>
+        <About />
+
+        <Parallax bgImage={image4}
+          strength={400}>
+          <div style={{ height: 700 }} class="margin-2x">
+            <div style={titleStyles}>Solutions</div>
+            <p style={bodyStyles}>
+              Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
+              vis ad suscipit moderatius. moderatius. Mundi primis <br />
+              antiopam mel ea. Pro graecis commune cotidieque cu,<br />
+              et diceret splendide pro. At nam dicta recusabo <br />
+              maiestatis. Ancillae atomorum no nec.
+            </p>
           </div>
         </Parallax>
-        <InteractiveExperiences />
 
-        <Parallax bgImage={image1}
-          strength={500}>
-          <div style={{ height: 500 }}>
-            <div style={insideStyles}>HTML inside the parallax</div>
+        <Solutions />
+
+        <Parallax bgImage={def}
+          strength={400}>
+          <div style={{ height: 700 }}>
+            <div class="div-right">
+              <p style={titleStyles} class="margin-2x text-left">Partners</p>
+              <br />
+              <p style={bodyStyles} class="margin-2x text-left">
+                Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
+                vis ad suscipit moderatius. moderatius. Mundi primis <br />
+                antiopam mel ea. Pro graecis commune cotidieque cu,<br />
+                et diceret splendide pro. At nam dicta recusabo <br />
+                maiestatis. Ancillae atomorum no nec.
+              </p>
+            </div>
+          </div>
+        </Parallax>
+
+        <Partners />
+
+        <Parallax bgImage={image3}
+          strength={400}>
+          <div style={{ height: 700 }} class="margin-2x">
+            <div style={titleStyles}>Meet The Team</div>
+            <p style={bodyStyles}>
+              Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
+              vis ad suscipit moderatius. moderatius. Mundi primis <br />
+              antiopam mel ea. Pro graecis commune cotidieque cu,<br />
+              et diceret splendide pro. At nam dicta recusabo <br />
+              maiestatis. Ancillae atomorum no nec.
+            </p>
           </div>
         </Parallax>
 
         <MeetTheTeam />
-
-        <Parallax bgImage={image1}
-          strength={500}>
-          <div style={{ height: 500 }}>
-            <div style={insideStyles}>HTML inside the parallax</div>
-          </div>
-        </Parallax>
-
         <TeamLayout />
 
         <Footer />

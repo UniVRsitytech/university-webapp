@@ -12,3 +12,23 @@
 .card-help {
     background-color: black;
 }
+
+.margin-2x {
+    margin: 16px;
+}
+
+.padding-2x {
+    padding: 16px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.div-right {
+    float: right;
+}

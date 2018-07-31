@@ -10,7 +10,8 @@ function SimpleAppBar(props) {
       <AppBar position="static" color="default">
         <Toolbar>
           <Typography variant="title" color="inherit">
-            Header
+            UniVRsity
+            {/* <img src={ require('../assets/images/univrsity.png') } />  */}
           </Typography>
         </Toolbar>
       </AppBar>
