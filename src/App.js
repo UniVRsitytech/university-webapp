@@ -7,11 +7,11 @@ import MeetTheTeam from './Components/Team/team'
 import About from './Components/About/about';
 import Solutions from './Components/Solutions/solutions';
 import Partners from './Components/Partners/partners';
-import TeamLayout from './Components/Team/TeamLayout'
-import TestPar from './Components/Parallax/testparallax'
-import SandboxPar from './Components/Parallax/sandbox'
-import AppBar from './Components/ScrollAppBar'
-import Footer from './Components/Footer'
+import TeamLayout from './Components/Team/TeamLayout';
+import TestPar from './Components/Parallax/testparallax';
+import SandboxPar from './Components/Parallax/sandbox';
+import AppBar from './Components/AppBars/ScrollAppBar';
+import Footer from './Components/Footer';
 import Button from '@material-ui/core/Button';
 
 import { Parallax } from 'react-parallax';
@@ -98,9 +98,8 @@ class App extends Component {
 
     return (
       <div>
-
+        <AppBar />
         <div>
-          <AppBar />
           <Link activeClass="active" to="test" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
             <Button>
               Scroll Down
@@ -175,7 +174,9 @@ class App extends Component {
           </div>
         </Parallax>
 
-        <Partners />
+        <Element name="test" className="element">
+          <Partners />
+        </Element>
 
         <Parallax bgImage={image3}
           strength={400}>
