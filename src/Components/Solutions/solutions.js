@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../assets/css/main.css';
+// import '../../assets/css/main.css';
 import '../../assets/css/noscript.css';
 
 class Solutions extends Component {
