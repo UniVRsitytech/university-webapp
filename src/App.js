@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
 import './assets/css/layout.css';
 import Mission from './Components/Mission/Mission.js'
 import MeetTheTeam from './Components/Team/team'
@@ -39,7 +39,7 @@ const insideStyles = { background: 'white', padding: 20, position: 'absolute', t
 // const insideStyles = { background: 'white', transform: 'translate(-50%,-50%)' };
 const image1 = require('./assets/images/banner.jpg');
 const image2 = require('./assets/images/gouser.jpg');
-const image3 = require('./assets/images/team.png');
+const image3 = require('./assets/images/team.jpg');
 const image4 = require('./assets/images/gouser2.jpg');
 const def = require('./assets/images/pic02.jpg');
 //read the following for documentation on the Parallax Component
@@ -179,7 +179,8 @@ class App extends Component {
         </Element>
 
         <Parallax bgImage={image3}
-          strength={400}>
+          strength={400}
+          blur={0}>
           <div style={{ height: 700 }} class="margin-2x">
             <div style={titleStyles}>Meet The Team</div>
             <p style={bodyStyles}>
