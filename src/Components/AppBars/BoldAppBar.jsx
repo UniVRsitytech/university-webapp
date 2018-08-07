@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import '../../assets/css/navbar2.css'
+import '../../assets/css/nav/navbar2.css'
 
 function SimpleAppBar(props) {
     return (

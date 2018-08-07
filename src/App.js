@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './assets/css/App.css';
-import './assets/css/layout.css';
+// import './assets/css/App.css';
+// import './assets/css/layout.css';
 import Mission from './Components/Mission/Mission.js'
 import MeetTheTeam from './Components/Team/team'
 import About from './Components/About/about';
@@ -10,9 +10,13 @@ import Partners from './Components/Partners/partners';
 import TeamLayout from './Components/Team/TeamLayout';
 import TestPar from './Components/Parallax/testparallax';
 import SandboxPar from './Components/Parallax/sandbox';
-import AppBar from './Components/AppBars/ScrollAppBar';
+import AppBar from './Components/AppBars/StyledAppBar';
 import Footer from './Components/Footer';
 import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+
 
 import { Parallax } from 'react-parallax';
 import * as Scroll from 'react-scroll';
@@ -193,7 +197,7 @@ class App extends Component {
           </div>
         </Parallax>
 
-        <MeetTheTeam />
+        {/* <MeetTheTeam /> */}
         <TeamLayout />
 
         <Footer />

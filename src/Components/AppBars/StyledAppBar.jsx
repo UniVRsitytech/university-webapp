@@ -3,15 +3,16 @@ import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import '../../assets/css/navbar1.css'
+import '../../assets/css/nav/navbar1.css';
+const logo = require('../../assets/images/univrsity.png');
 
-function SimpleAppBar(props) {
+function StyledAppBar(props) {
   return (
-    <div>
+    <div class="coolbackground">
         <Toolbar>
-          <nav>
+        <img src={logo} alt="UniVRsity Logo" style={{height:100}}/>
+          <nav class="nav">
           <ul>
-              UniVRsity
             <li>
               <a href="#">Home</a>
             </li>
@@ -26,15 +27,13 @@ function SimpleAppBar(props) {
             </li>
           </ul>
         </nav>
-        </Toolbar>
-
-        
+        </Toolbar>        
     </div>
   );
 }
 
-SimpleAppBar.propTypes = {
+StyledAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default (SimpleAppBar);
+export default (StyledAppBar);
