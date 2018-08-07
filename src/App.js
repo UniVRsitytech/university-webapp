@@ -97,7 +97,7 @@ class App extends Component {
 
   render() {
     const titleStyles = { fontFamily: 'sanserif', color: 'white', fontSize: "60pt" };
-    const bodyStyles = { fontFamily: 'sanserif', color: 'white', fontSize: "22pt" };
+    const bodyStyles = { fontFamily: 'sanserif', color: 'black', fontSize: "22pt" };
 
 
     return (
@@ -133,11 +133,16 @@ class App extends Component {
               <p style={titleStyles} class="margin-2x text-left">About</p>
               <br />
               <p style={bodyStyles} class="margin-2x text-left">
-                Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
-                vis ad suscipit moderatius. moderatius. Mundi primis <br />
-                antiopam mel ea. Pro graecis commune cotidieque cu,<br />
-                et diceret splendide pro. At nam dicta recusabo <br />
-                maiestatis. Ancillae atomorum no nec.
+                In the intersection of education and virtual reality<br/>
+                lies a way to enhance the experience of online eduaction.<br/>
+                Our products offer a more cooperative and engaging<br/>
+                environement for those looking towards an online<br/>
+                education.
+                // Lorem ipsum dolor sit amet, sale repudiandae in mei<br />
+                // vis ad suscipit moderatius. moderatius. Mundi primis <br />
+                // antiopam mel ea. Pro graecis commune cotidieque cu,<br />
+                // et diceret splendide pro. At nam dicta recusabo <br />
+                // maiestatis. Ancillae atomorum no nec.
               </p>
             </div>
           </div>
