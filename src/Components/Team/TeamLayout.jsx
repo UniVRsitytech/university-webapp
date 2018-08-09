@@ -11,6 +11,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import RadioSelector from "./Selector";
 
 
 function TeamList(props) {
@@ -45,6 +46,7 @@ class TeamLayout extends React.Component {
             <div class="spacer">
                 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
                     <div class="spacer">
+                    <RadioSelector />
                         <FormControl>
                             <InputLabel htmlFor="Pick">Team</InputLabel>
                             <Select

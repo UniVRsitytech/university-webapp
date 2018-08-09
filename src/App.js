@@ -10,30 +10,24 @@ import Partners from './Components/Partners/partners';
 import TeamLayout from './Components/Team/TeamLayout';
 import TestPar from './Components/Parallax/testparallax';
 import SandboxPar from './Components/Parallax/sandbox';
-import AppBar from './Components/AppBars/StyledAppBar';
+import AppBar from './Components/AppBars/MatAppBar';
 import Footer from './Components/Footer';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import BootNavBar from './Components/AppBars/BootBar';
 
 
 import { Parallax } from 'react-parallax';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-//ignore, this is stuff I'm playing with for Material-UI override
-// import { render } from "react-dom";
-// import { create } from "jss";
-// import JssProvider from "react-jss/lib/JssProvider";
-// import { createGenerateClassName, jssPreset } from "@material-ui/core/styles";
+import { render } from 'react-dom';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import theme from "./assets/theme"
+// const theme = createMuiTheme();
 
-// const styleNode = document.createComment("insertion-point-jss");
-// document.head.insertBefore(styleNode, document.head.firstChild);
-
-// const generateClassName = createGenerateClassName();
-// const jss = create(jssPreset());
-// jss.options.insertionPoint = "insertion-point-jss";
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -48,6 +42,7 @@ const image4 = require('./assets/images/gouser2.jpg');
 const def = require('./assets/images/pic02.jpg');
 //read the following for documentation on the Parallax Component
 //https://github.com/RRutsche/react-parallax
+
 
 class App extends Component {
 
@@ -102,14 +97,9 @@ class App extends Component {
 
     return (
       <div>
-        <AppBar />
-        <div>
-          <Link activeClass="active" to="test" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
-            <Button>
-              Scroll Down
-            </Button>
-          </Link>
-        </div>
+        <MuiThemeProvider theme={theme}>
+        <AppBar handleSetActive={this.handleSetActive}/>
+        {/* <BootNavBar /> */}
 
         <Parallax
           bgImage={image1}
@@ -126,6 +116,7 @@ class App extends Component {
 
         <Mission />
 
+        <Element name="about" className="element">
         <Parallax bgImage={image2}
           strength={400}>
           <div style={{ height: 700 }}>
@@ -147,9 +138,11 @@ class App extends Component {
             </div>
           </div>
         </Parallax>
+        </Element>
 
         <About />
 
+        <Element name="solutions" className="element">
         <Parallax bgImage={image4}
           strength={400}>
           <div style={{ height: 700 }} class="margin-2x">
@@ -163,9 +156,11 @@ class App extends Component {
             </p>
           </div>
         </Parallax>
+        </Element>
 
         <Solutions />
 
+        <Element name="partners" className="element">
         <Parallax bgImage={def}
           strength={400}>
           <div style={{ height: 700 }}>
@@ -182,11 +177,11 @@ class App extends Component {
             </div>
           </div>
         </Parallax>
-
-        <Element name="test" className="element">
-          <Partners />
         </Element>
 
+          <Partners />
+
+        <Element name="team" className="element">
         <Parallax bgImage={image3}
           strength={400}
           blur={0}>
@@ -201,11 +196,13 @@ class App extends Component {
             </p>
           </div>
         </Parallax>
+        </Element>
 
         {/* <MeetTheTeam /> */}
-        <TeamLayout />
+          <TeamLayout />
 
         <Footer />
+        </MuiThemeProvider>
       </div>
 
     );
