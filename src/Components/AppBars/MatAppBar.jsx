@@ -33,8 +33,8 @@ function ButtonAppBar(props) {
     return (
         <div className={classes.root}>
             <AppBar position="static" class="skygradient">
-                <Toolbar>
-                    <img src={logo} alt="UniVRsity Logo" style={{height:100}}/>
+                <Toolbar style={{height:100}}>
+                    <img src={logo} alt="UniVRsity Logo" style={{height:70}}/>
                     <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} onSetActive={props.handleSetActive}>
                         <button class="large tabbutton1" >About</button>
                     </Link>
