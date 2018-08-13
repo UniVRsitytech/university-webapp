@@ -12,7 +12,7 @@ var divstyle= {
 function Title(props) {
     return (
         <div class="center ">
-            <h1 class="avenuefont" >Define your own reality.</h1>
+            <h1 class="avenuefont erasecss" >Define your own reality.</h1>
         </div>
     );
 }
