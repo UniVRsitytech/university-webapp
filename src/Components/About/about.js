@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 // import '../../assets/css/main.css';
 // import '../../assets/css/noscript.css';
+import "../../assets/css/App.css"
 
 class About extends Component {
     render() {
         return (
             <div>
-                <section class="spotlight style1">
+                <section class="spotlight style1 skygradient">
                     {/* <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"> */}
                     <div class="content">
                         When students and tutors are forced to choose between in-person vs online tutoring they have to choose between cost vs. value.

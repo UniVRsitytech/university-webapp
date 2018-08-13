@@ -6,6 +6,8 @@ import {
 } from 'video-react';
 import '../../assets/css/video.css';
 import '../../assets/css/layout.css';
+import '../../assets/css/App.css';
+
 import YouTube from 'react-youtube';
 import BioCardAuto from './../Team/BioCardAuto';
 
@@ -20,7 +22,7 @@ const opts = {
 class Solutions extends Component {
     render() {
         return (
-            <div>
+            <div class="skygradientcontent">
                 <section class="spotlight style1">
                     <div class="content">
                         <h2>Interactive Tools</h2>

@@ -128,7 +128,7 @@ class App extends Component {
 
           <Parallax
             bgImage={test1}
-            strength={100}
+            strength={400}
             >
             <div style={{ height: 600 }} class="div-right">
               <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
