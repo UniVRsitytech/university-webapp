@@ -1,18 +1,48 @@
 import React, { Component } from 'react';
+import {
+    Player, ControlBar, ReplayControl,
+    ForwardControl, CurrentTimeDisplay,
+    TimeDivider, PlaybackRateMenuButton, VolumeMenuButton
+} from 'video-react';
+import '../../assets/css/video.css';
+import YouTube from 'react-youtube';
 // import '../../assets/css/main.css';
 // import '../../assets/css/noscript.css';
+
+const opts = {
+    height: '1000',
+    width: '1280',
+    playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+    }
+};
 
 class Solutions extends Component {
     render() {
         return (
-            <div>
-                <b>Solutions Section</b><br/>
-                <ul>
-                    <li>Explain Multi-Platform Solution (Go, mobile, web)</li>
-                    <li>Graphic of Timeline from pitch deck?</li>
-                    <li>Where can I get the app?</li>
-                    <li>How to start using it?</li>
-                </ul>
+            //     <Player
+            //     poster="/assets/poster.png"
+            //   >
+            //     <source src="https://www.youtube.com/watch?v=4PQ0JtkicV8" />
+
+            //     <ControlBar>
+            //       <ReplayControl seconds={10} order={1.1} />
+            //       <ForwardControl seconds={30} order={1.2} />
+            //       <CurrentTimeDisplay order={4.1} />
+            //       <TimeDivider order={4.2} />
+            //       <PlaybackRateMenuButton
+            //         rates={[5, 2, 1, 0.5, 0.1]}
+            //         order={7.1}
+            //       />
+            //       <VolumeMenuButton disabled />
+            //     </ControlBar>
+            //   </Player>
+            <div class="center">
+                <YouTube
+                    videoId="4PQ0JtkicV8"
+                    opts={opts}
+                    onReady={this._onReady}
+                />
             </div>
         );
     }

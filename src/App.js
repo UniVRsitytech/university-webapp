@@ -98,6 +98,7 @@ class App extends Component {
 
     return (
       <div>
+        <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" />
         <AppBar />
         <div>
           <Link activeClass="active" to="test" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
