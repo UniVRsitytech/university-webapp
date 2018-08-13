@@ -6,8 +6,6 @@ import {
 } from 'video-react';
 import '../../assets/css/video.css';
 import YouTube from 'react-youtube';
-// import '../../assets/css/main.css';
-// import '../../assets/css/noscript.css';
 
 const opts = {
     height: '1000',
@@ -37,12 +35,21 @@ class Solutions extends Component {
             //       <VolumeMenuButton disabled />
             //     </ControlBar>
             //   </Player>
-            <div class="center">
+            <div>
+            <div class="center-video">
                 <YouTube
                     videoId="4PQ0JtkicV8"
                     opts={opts}
                     onReady={this._onReady}
                 />
+            </div>
+            <div class="center-video">
+                <YouTube
+                    videoId="7KY7j8ACd30"
+                    opts={opts}
+                    onReady={this._onReady}
+                />
+            </div>
             </div>
         );
     }
