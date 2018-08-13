@@ -7,13 +7,12 @@ import '../../assets/css/layout.css';
 
 var divstyle= {
     margin: '0px',
-    height: '5em'
 }
 
 function Title(props) {
     return (
-        <div class="avenuefont center">
-            <h1 style={divstyle}>Define your own reality.</h1>
+        <div class="center ">
+            <h1 class="avenuefont" >Define your own reality.</h1>
         </div>
     );
 }

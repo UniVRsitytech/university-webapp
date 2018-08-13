@@ -38,10 +38,3 @@
   font-family: AvenueX;
   src: url(../fonts/AvenueX-Regular.otf);
 }
-
-.avenuefont{
-  font-family: AvenueX;
-  font-size: 48;
-  text-align: center;
-  background-image: url("../images/bluetriangles.jpg");
-}
