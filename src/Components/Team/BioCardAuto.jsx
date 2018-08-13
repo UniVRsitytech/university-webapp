@@ -30,12 +30,8 @@ const styles = {
         flex: 1
     },
     card: {
-        minHeight: 500,
-        maxHeight: 700
-    },
-    media: {
-        height: 0,
-        paddingTop: '56.25%', // 16:9
+        // minHeight: 500,
+        // maxHeight: 700
     }
   };
 
