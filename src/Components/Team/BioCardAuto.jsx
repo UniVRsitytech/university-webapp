@@ -44,12 +44,12 @@ class BioCardAuto extends React.Component {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <button class="large" >
                             Modal
-                        </Button>
-                        <Button size="small" color="primary">
+                        </button>
+                        <button class="large" color="primary">
                             Learn More
-                        </Button>
+                        </button>
                     </CardActions>
                 </Card>
             </div>

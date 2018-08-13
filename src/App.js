@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 // import './assets/css/App.css';
 // import './assets/css/layout.css';
+// import './assets/css/filteredmain.css';
+import './assets/css/main.css';
+
+
 import Mission from './Components/Mission/Mission.js'
 import MeetTheTeam from './Components/Team/team'
 import About from './Components/About/about';
@@ -98,49 +102,58 @@ class App extends Component {
     return (
       <div>
         <MuiThemeProvider theme={theme}>
+        
         <AppBar handleSetActive={this.handleSetActive}/>
-        {/* <BootNavBar /> */}
 
-        <Parallax
+        {/* <Parallax
           bgImage={image1}
           strength={400}
           blur={2}>
           <div style={{ height: 700 }}>
-            <div style={titleStyles} class="margin-2x">
-              Remote Learning
+            <div class="margin-2x">
+              <h2>Remote Learning</h2>
               <br />
-              Made Easy
+              <p>Made Easy</p>
             </div>
           </div>
-        </Parallax>
+        </Parallax> */}
 
-        <Mission />
+{/* trying new styling inside the parallax */}
+          <Parallax
+            bgImage={image1}
+            strength={400}
+            blur={2}>
+            <div style={{ height: 700 }}>
+              <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                <div class="content">
+                  <h2>About</h2>
+                  <p>Participate in interactive activities that put you at the core of your education. Experiences include titration labs,
+                        interacative electron models, 3D physics experiments and more.</p>
+                  <ul class="actions stacked">
+                    <li>
+                      <button class="button">Learn More</button>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </Parallax>
+
+        <About />
 
         <Element name="about" className="element">
         <Parallax bgImage={image2}
           strength={400}>
           <div style={{ height: 700 }}>
             <div class="div-right">
-              <p style={titleStyles} class="margin-2x text-left">About</p>
+              <p class="margin-2x text-left">Solutions</p>
               <br />
-              <p style={bodyStyles} class="margin-2x text-left">
-                In the intersection of education and virtual reality<br/>
-                lies a way to enhance the experience of online eduaction.<br/>
-                Our products offer a more cooperative and engaging<br/>
-                environement for those looking towards an online<br/>
-                education.
-                // Lorem ipsum dolor sit amet, sale repudiandae in mei<br />
-                // vis ad suscipit moderatius. moderatius. Mundi primis <br />
-                // antiopam mel ea. Pro graecis commune cotidieque cu,<br />
-                // et diceret splendide pro. At nam dicta recusabo <br />
-                // maiestatis. Ancillae atomorum no nec.
-              </p>
             </div>
           </div>
         </Parallax>
         </Element>
 
-        <About />
+        <Solutions />
 
         <Element name="solutions" className="element">
         <Parallax bgImage={image4}
@@ -158,7 +171,9 @@ class App extends Component {
         </Parallax>
         </Element>
 
-        <Solutions />
+        {/* <HomeDemo /> */}
+
+        {/* <ChemDemo /> */}
 
         <Element name="partners" className="element">
         <Parallax bgImage={def}
@@ -199,7 +214,7 @@ class App extends Component {
         </Element>
 
         {/* <MeetTheTeam /> */}
-          <TeamLayout />
+          {/* <TeamLayout /> */}
 
         <Footer />
         </MuiThemeProvider>

@@ -1,3 +1,5 @@
+import "../../assets/css/nav/appbar.css"
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -10,9 +12,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 const logo = require('../../assets/images/univrsity.png');
 
-
-// import "../../assets/css/nav/appbar.css"
-
 const styles = {
     root: {
         flexGrow: 1,
@@ -24,26 +23,29 @@ const styles = {
         marginLeft: -12,
         marginRight: 20,
     },
+    pushright: {
+        marginLeft: 500
+    }
 };
 
 function ButtonAppBar(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" class="skygradient">
                 <Toolbar>
                     <img src={logo} alt="UniVRsity Logo" style={{height:100}}/>
                     <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} onSetActive={props.handleSetActive}>
-                        <Button color="inherit">About</Button>
+                        <Button class="large tabbutton1" >About</Button>
                     </Link>
                     <Link activeClass="active" to="solutions" spy={true} smooth={true} duration={500} onSetActive={props.handleSetActive}>
-                        <Button color="inherit">Solutions</Button>
+                        <button class="large tabbutton" >Solutions</button>
                     </Link>
                     <Link activeClass="active" to="partners" spy={true} smooth={true} duration={500} onSetActive={props.handleSetActive}>
-                        <Button color="inherit">Partners</Button>
+                        <button class="large tabbutton" >Partners</button>
                     </Link>
                     <Link activeClass="active" to="team" spy={true} smooth={true} duration={500} onSetActive={props.handleSetActive}>
-                        <Button color="inherit">Meet The Team</Button>
+                        <button class="large tabbutton" >Meet The Team</button>
                     </Link>
                 </Toolbar>
             </AppBar>

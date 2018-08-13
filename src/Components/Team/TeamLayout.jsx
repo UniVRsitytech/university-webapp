@@ -11,15 +11,20 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import RadioSelector from "./Selector";
+import RadioSelector from "./RawSelector";
 
 
 function TeamList(props) {
     const people = props.people;
     const listItems = people.map((personinfo) =>
+        // {
+        // if(props.team === personinfo.team || props.team==="all")
+        // return(
         <Grid item xs={3} key={personinfo.id}>
             <BioCardAuto personinfo={personinfo} />
         </Grid>
+        // );
+        // }
     );
     return (
         <Grid container spacing={24}>{listItems}</Grid>
@@ -32,7 +37,7 @@ class TeamLayout extends React.Component {
         super(props);
         this.state = {
             team: null,
-            
+
         };
     }
 
@@ -40,13 +45,23 @@ class TeamLayout extends React.Component {
         this.setState({ [event.target.name]: event.target.value });
     };
 
+    componentDidUpdate() {
+        if (this.team != + this.prevState.team) {
+
+        }
+    }
+
 
     render() {
         return (
             <div class="spacer">
+            <section>
+                <div>
+                <RadioSelector />
+                </div>
+            </section>
                 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
                     <div class="spacer">
-                    <RadioSelector />
                         <FormControl>
                             <InputLabel htmlFor="Pick">Team</InputLabel>
                             <Select
@@ -67,7 +82,7 @@ class TeamLayout extends React.Component {
                             <FormHelperText>Pick a Team!</FormHelperText>
                         </FormControl>
                     </div>
-                    <TeamList people={teaminfo} />
+                    <TeamList people={teaminfo} team={this.state.team} />
                 </section>
             </div>
         );
