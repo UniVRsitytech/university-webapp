@@ -16,6 +16,7 @@ import TestPar from './Components/Parallax/testparallax';
 import SandboxPar from './Components/Parallax/sandbox';
 import AppBar from './Components/AppBars/MatAppBar';
 import Footer from './Components/Footer';
+import Title from './Components/Title/title'
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -117,8 +118,8 @@ class App extends Component {
             </div>
           </div>
         </Parallax> */}
+        <Title />
 
-{/* trying new styling inside the parallax */}
           <Parallax
             bgImage={image1}
             strength={400}
