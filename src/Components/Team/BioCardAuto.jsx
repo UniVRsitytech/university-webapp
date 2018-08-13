@@ -7,10 +7,33 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
+import classNames from 'classnames';
 
 //css stylesheet
 import "../../assets/css/team.css";
 const image1 = require('../../assets/headshots/None_5YP0MST.jpg');
+
+const styles = {
+    row: {
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    avatar: {
+      margin: 10,
+    },
+    bigAvatar: {
+      width: 300,
+      height: 300,
+    },
+    wide: {
+        flex: 1
+    },
+    card: {
+        minHeight: 300,
+        maxHeight: 500
+    }
+  };
 
 class BioCardAuto extends React.Component {
 
@@ -22,34 +45,34 @@ class BioCardAuto extends React.Component {
       }
 
     render() {
+        const { classes } = this.props;
         return (
             <div class="card">
-                <Card>
+                <Card className={classes.card}>
                     <CardMedia
                         className="media"
                         image={require('../../assets/headshots/' + this.props.personinfo.picture)}
                         title="Contemplative Reptile"
                     />
+                    {/* <Avatar alt="Avatar" src={require('../../assets/headshots/' + this.props.personinfo.picture)} className={classNames(classes.avatar, classes.bigAvatar)} /> */}
                     <CardContent>
-                        <Typography gutterBottom variant="headline" component="h2">
-                            {this.props.personinfo.name}
-                        </Typography>
-                        <Typography component="p">
+                        {/* <Typography gutterBottom variant="headline" component="h2"> */}
+                            <h2>{this.props.personinfo.name}</h2>
+                        {/* </Typography> */}
+                        {/* <br /> */}
+                        {/* <Typography component="p"> */}
                             {this.props.personinfo.bio}
-                        </Typography>
+                        {/* </Typography> */}
                     </CardContent>
-                    <CardContent>
+                    {/* <CardContent>
                         <Typography gutterBottom variant="headline" component="h2">
                             hello
                         </Typography>
-                    </CardContent>
+                    </CardContent> */}
                     <CardActions>
-                        <button class="large" >
-                            Modal
-                        </button>
-                        <button class="large" color="primary">
+                        <Button size="small" className={classes.wide}>
                             Learn More
-                        </button>
+                        </Button>
                     </CardActions>
                 </Card>
             </div>
@@ -61,4 +84,4 @@ class BioCardAuto extends React.Component {
 //   classes: PropTypes.object.isRequired,
 // };
 
-export default BioCardAuto;
+export default withStyles(styles)(BioCardAuto);

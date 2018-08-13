@@ -6,7 +6,7 @@ class About extends Component {
     render() {
         return (
             <div>
-                <section class="banner fullscreen spotlight ">
+                <section class="spotlight style1">
                     {/* <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"> */}
                     <div class="content">
                         <h2>About</h2>

@@ -22,7 +22,7 @@ function TeamList(props) {
         // {
         // if(props.team === personinfo.team || props.team==="all")
         // return(
-        <Grid item xs={3} key={personinfo.id}>
+        <Grid item xs={6} sm={3} key={personinfo.id}>
             <BioCardAuto personinfo={personinfo} />
         </Grid>
         // );

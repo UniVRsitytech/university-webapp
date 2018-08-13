@@ -36,7 +36,7 @@ function ButtonAppBar(props) {
                 <Toolbar>
                     <img src={logo} alt="UniVRsity Logo" style={{height:100}}/>
                     <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} onSetActive={props.handleSetActive}>
-                        <Button class="large tabbutton1" >About</Button>
+                        <button class="large tabbutton1" >About</button>
                     </Link>
                     <Link activeClass="active" to="solutions" spy={true} smooth={true} duration={500} onSetActive={props.handleSetActive}>
                         <button class="large tabbutton" >Solutions</button>
