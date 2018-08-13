@@ -1,8 +1,10 @@
+import "../../assets/css/team.css";
+
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import BioCard from './BioCard';
 import BioCardAuto from './BioCardAuto';
-import "../../assets/css/team.css";
+
 import { teaminfo } from "../../info/teamdata"
 import { CardContent, Card } from '../../../node_modules/@material-ui/core';
 import Input from '@material-ui/core/Input';
@@ -55,13 +57,13 @@ class TeamLayout extends React.Component {
     render() {
         return (
             <div class="spacer">
-            <section>
+            {/* <section>
                 <div>
                 <RadioSelector />
                 </div>
-            </section>
-                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-                    <div class="spacer">
+            </section> */}
+                <section>
+                    {/* <div class="spacer">
                         <FormControl>
                             <InputLabel htmlFor="Pick">Team</InputLabel>
                             <Select
@@ -81,7 +83,7 @@ class TeamLayout extends React.Component {
                             </Select>
                             <FormHelperText>Pick a Team!</FormHelperText>
                         </FormControl>
-                    </div>
+                    </div> */}
                     <TeamList people={teaminfo} team={this.state.team} />
                 </section>
             </div>

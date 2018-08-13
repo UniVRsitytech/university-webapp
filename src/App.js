@@ -103,7 +103,8 @@ class App extends Component {
       <div>
         <MuiThemeProvider theme={theme}>
         
-        <AppBar handleSetActive={this.handleSetActive}/>
+        {/* <AppBar handleSetActive={this.handleSetActive}/> */}
+        <AppBar />
 
         {/* <Parallax
           bgImage={image1}
@@ -126,14 +127,7 @@ class App extends Component {
             <div style={{ height: 700 }}>
               <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                 <div class="content">
-                  <h2>About</h2>
-                  <p>Participate in interactive activities that put you at the core of your education. Experiences include titration labs,
-                        interacative electron models, 3D physics experiments and more.</p>
-                  <ul class="actions stacked">
-                    <li>
-                      <button class="button">Learn More</button>
-                    </li>
-                  </ul>
+                  <h2>Define your own reality. </h2>
                 </div>
               </section>
             </div>
@@ -214,7 +208,7 @@ class App extends Component {
         </Element>
 
         {/* <MeetTheTeam /> */}
-          {/* <TeamLayout /> */}
+          <TeamLayout />
 
         <Footer />
         </MuiThemeProvider>
