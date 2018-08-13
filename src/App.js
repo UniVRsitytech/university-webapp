@@ -45,6 +45,12 @@ const image2 = require('./assets/images/gouser.jpg');
 const image3 = require('./assets/images/team.jpg');
 const image4 = require('./assets/images/gouser2.jpg');
 const def = require('./assets/images/pic02.jpg');
+
+const test1 = require('./assets/images/earthboy.jpg');
+const test2 = require('./assets/images/shinyheadset.jpg');
+const test3 = require('./assets/images/bluegirl.jpg');
+//sparkly
+//vrgirl
 //read the following for documentation on the Parallax Component
 //https://github.com/RRutsche/react-parallax
 
@@ -121,10 +127,10 @@ class App extends Component {
           <Title />
 
           <Parallax
-            bgImage={image1}
-            strength={400}
-            blur={2}>
-            <div style={{ height: 700 }} class="div-left">
+            bgImage={test1}
+            strength={100}
+            >
+            <div style={{ height: 900 }} class="div-left">
               <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                 <div class="content">
                   <h1 class="header-size">About</h1>
@@ -137,8 +143,8 @@ class App extends Component {
           <About />
 
           <Element name="about" className="element">
-            <Parallax bgImage={image2}
-              strength={400}>
+            <Parallax bgImage={test2}
+              strength={300}>
               <div style={{ height: 700 }} class="div-right">
                 <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
                   <div class="content">
@@ -146,15 +152,15 @@ class App extends Component {
                     <p>The first multi-user education application.</p>
                   </div>
                 </section>
-              </div>
-            </Parallax>
-          </Element>
+          </div>
+        </Parallax>
+        </Element>
 
-          <Solutions />
+        <Solutions />
 
-          <Element name="solutions" className="element">
-            <Parallax bgImage={image4}
-              strength={400}>
+        <Element name="solutions" className="element">
+        <Parallax bgImage={test3}
+          strength={400}>
               <div style={{ height: 700 }} class="div-left">
                 <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                   <div class="content">
@@ -163,8 +169,8 @@ class App extends Component {
                   </div>
                 </section>
               </div>
-            </Parallax>
-          </Element>
+        </Parallax>
+        </Element>
 
           <Partners />
 
