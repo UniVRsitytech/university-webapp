@@ -9,7 +9,7 @@ export const teaminfo = [
         bio: "CEO/Co-Founder",
         modalbio: "nic's bio",
         id: 1,
-        picture: "None_5YP0MST.jpg"
+        picture: "Nicolas-Barone.jpg"
     },
     {
         name: "Nicolas Buitrago",
@@ -18,7 +18,7 @@ export const teaminfo = [
         major: "CS",
         bio: "President/Co-Founder",
         id: 2,
-        picture: "None_5YP0MST.jpg"
+        picture: "Nicolas_Buitrago.jpg"
     },
     {
         name: "Justin Kuang",
@@ -28,7 +28,7 @@ export const teaminfo = [
         bio: "CFO",
         modalbio: "justin's bio",
         id: 3,
-        picture: "None_5YP0MST.jpg"
+        picture: "stupid_justin.jpg"
     },
     {
         name: "Dom Rigoglioso",
@@ -38,7 +38,7 @@ export const teaminfo = [
         bio: "Product Head",
         modalbio: "dom's bio",
         id: 4,
-        picture: "None_5YP0MST.jpg"
+        picture: "Dom.png"
     },
     {
         name: "Frank Rodriguez",
@@ -48,7 +48,7 @@ export const teaminfo = [
         bio: "Developer",
         modalbio: "frank's bio",
         id: 5,
-        picture: "None_5YP0MST.jpg"
+        picture: "frank.jpg"
     },
     {
         name: "Anirudh Maddula",
@@ -58,7 +58,7 @@ export const teaminfo = [
         bio: "Developer",
         modalbio: "anirudh's bio",
         id: 6,
-        picture: "None_5YP0MST.jpg"
+        picture: "Anirudh.jpg"
     },
     {
         name: "Michelle Park",
@@ -68,18 +68,18 @@ export const teaminfo = [
         bio: "UX Designer",
         modalbio: "michelle's bio",
         id: 7,
-        picture: "None_5YP0MST.jpg"
+        picture: "Michelle.jpg"
     },
-    {
-        name: "Luis Lopez",
-        team: "Dev",
-        class: "2020",
-        major: "CS",
-        bio: "UX Designer",
-        modalbio: "Luis's bio",
-        id: 8,
-        picture: "None_5YP0MST.jpg"
-    },
+    // {
+    //     name: "Luis Lopez",
+    //     team: "Dev",
+    //     class: "2020",
+    //     major: "CS",
+    //     bio: "UX Designer",
+    //     modalbio: "Luis's bio",
+    //     id: 8,
+    //     picture: "Luis.jpg"
+    // },
     {
         name: "Chloe Kuo",
         team: "Dev",
@@ -88,7 +88,7 @@ export const teaminfo = [
         bio: "Hardware Lead",
         modalbio: "Chloe's bio",
         id: 9,
-        picture: "None_5YP0MST.jpg"
+        picture: "Chloe.jpg"
     }
 ]
 
