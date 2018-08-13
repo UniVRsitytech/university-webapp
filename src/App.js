@@ -130,7 +130,7 @@ class App extends Component {
             bgImage={test1}
             strength={100}
             >
-            <div style={{ height: 900 }} class="div-right">
+            <div style={{ height: 600 }} class="div-right">
               <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
                 <div class="content">
                   <h1 class="header-size">About</h1>
@@ -145,7 +145,7 @@ class App extends Component {
           <Element name="about" className="element">
             <Parallax bgImage={test2}
               strength={300}>
-              <div style={{ height: 700 }} class="div-left">
+              <div style={{ height: 600 }} class="div-left">
                 <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                   <div class="content">
                     <h1 class="header-size">Solutions</h1>
@@ -188,7 +188,7 @@ class App extends Component {
               </div>
             </Parallax>
           </Element>
-          
+
             <TeamLayout />
 
             <Footer />
