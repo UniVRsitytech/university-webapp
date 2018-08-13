@@ -5,14 +5,12 @@ import '../../assets/css/layout.css';
 
 // const background = require('./assets/images/bluesquares.jpg');
 
-var divstyle= {
-    margin: '0px',
-}
+var divstyle= {margin: '0px', height: '5em'}
 
 function Title(props) {
     return (
-        <div class="center ">
-            <h1 class="avenuefont" >Define your own reality.</h1>
+        <div class="avenuefont center verticalcenter">
+            <p style={divstyle}>Define your own reality.</p>
         </div>
     );
 }

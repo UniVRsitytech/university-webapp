@@ -47,7 +47,7 @@
 }
 
 .sub-header-size {
-    font-size: 36;
+    font-size: 24;
 }
 
 .erasecss {
@@ -62,17 +62,15 @@
 
 .avenuefont{
     font-family: AvenueX;
-    font-size: 48;
+    font-size: 46pt;
     text-align: center;
     background-image: url("../images/bluetriangles.jpg");
     /* margin: '0px' !important; */
-    height: 10 !important;
-    line-height: 10 !important;
   }
   
   .verticalcenter{
-    height: 10 !important;
-    line-height: 10 !important;
+    height: 5 ;
+    line-height: 5 ;
   }
   
   .Absolute-Center {
