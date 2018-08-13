@@ -110,7 +110,8 @@ class App extends Component {
       <div>
         {/* <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" /> */}
         <MuiThemeProvider theme={theme}>    
-        <AppBar handleSetActive={this.handleSetActive}/>
+        {/* <AppBar handleSetActive={this.handleSetActive}/> */}
+        <AppBar />
 
         {/* <Parallax
           bgImage={image1}
