@@ -45,7 +45,7 @@ class Solutions extends Component {
                     </div>
                 </section>
 
-                <div class="center-video">
+                <div class="center">
                     <YouTube
                         videoId="4PQ0JtkicV8"
                         opts={opts}
@@ -63,7 +63,7 @@ class Solutions extends Component {
                     </div>
                 </section>
 
-                <div class="center-video">
+                <div class="center">
                     <YouTube
                         videoId="7KY7j8ACd30"
                         opts={opts}
