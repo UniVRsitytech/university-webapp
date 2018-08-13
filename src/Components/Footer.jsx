@@ -6,7 +6,7 @@ function Footer(props) {
         <div>
             <footer class="wrapper style1 align-center">
                 <div class="inner">
-                    <ul class="icons">
+                    {/* <ul class="icons">
                         <li>
                             <a href="#" class="icon style2 fa-twitter">
                                 <span class="label">Twitter</span>
@@ -32,7 +32,7 @@ function Footer(props) {
                                 <span class="label">Email</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                     <p>UniVRsity Technologies 2018.</p>
                 </div>
             </footer>
