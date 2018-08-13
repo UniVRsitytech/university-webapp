@@ -76,7 +76,7 @@ class Solutions extends Component {
                 <section class="spotlight style1">
                     <div class="content">
                         <p>
-                        There will many more to come!
+                        There will be many more to come!
                 </p>
                     </div>
                 </section>
