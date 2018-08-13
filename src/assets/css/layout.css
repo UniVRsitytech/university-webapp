@@ -44,7 +44,16 @@
     float: right;
 }
 
+.div-left {
+    float: left;
+}
+
 .center {
     margin: auto;
     width: 60%;
+}
+
+.pic {
+    height: 150px;
+    width: 150px;
 }

@@ -103,10 +103,10 @@ class App extends Component {
     return (
       <div>
         {/* <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" /> */}
-        <MuiThemeProvider theme={theme}>    
-        <AppBar handleSetActive={this.handleSetActive}/>
+        <MuiThemeProvider theme={theme}>
+          <AppBar handleSetActive={this.handleSetActive} />
 
-        {/* <Parallax
+          {/* <Parallax
           bgImage={image1}
           strength={400}
           blur={2}>
@@ -118,106 +118,80 @@ class App extends Component {
             </div>
           </div>
         </Parallax> */}
-        <Title />
+          <Title />
 
           <Parallax
             bgImage={image1}
             strength={400}
             blur={2}>
-            <div style={{ height: 700 }}>
+            <div style={{ height: 700 }} class="div-left">
               <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                 <div class="content">
-                  <h2>Define your own reality. </h2>
+                  <h1 class="header-size">About</h1>
+                  <p>Leading the industry in VR Education Technologies</p>
                 </div>
               </section>
             </div>
           </Parallax>
 
-        <About />
+          <About />
 
-        <Element name="about" className="element">
-        <Parallax bgImage={image2}
-          strength={400}>
-          <div style={{ height: 700 }}>
-            <section class="spotlight orient-right content-align-right image-position-center onscroll-image-fade-in">
-                  <div class="padding-2x margin-2x">
+          <Element name="about" className="element">
+            <Parallax bgImage={image2}
+              strength={400}>
+              <div style={{ height: 700 }} class="div-right">
+                <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+                  <div class="content">
                     <h1 class="header-size">Solutions</h1>
                     <p>The first multi-user education application.</p>
                   </div>
                 </section>
-          </div>
-        </Parallax>
-        </Element>
+              </div>
+            </Parallax>
+          </Element>
 
-        <Solutions />
+          <Solutions />
 
-        <Element name="solutions" className="element">
-        <Parallax bgImage={image4}
-          strength={400}>
-          <div style={{ height: 700 }} class="margin-2x">
-            <div style={titleStyles}>Solutions</div>
-            <p style={bodyStyles}>
-              Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
-              vis ad suscipit moderatius. moderatius. Mundi primis <br />
-              antiopam mel ea. Pro graecis commune cotidieque cu,<br />
-              et diceret splendide pro. At nam dicta recusabo <br />
-              maiestatis. Ancillae atomorum no nec.
-            </p>
-          </div>
-        </Parallax>
-        </Element>
-
-        {/* <HomeDemo /> */}
-
-        {/* <ChemDemo /> */}
-
-        <Element name="partners" className="element">
-        <Parallax bgImage={def}
-          strength={400}>
-          <div style={{ height: 700 }}>
-            <div class="div-right">
-              <p style={titleStyles} class="margin-2x text-left">Partners</p>
-              <br />
-              <p style={bodyStyles} class="margin-2x text-left">
-                Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
-                vis ad suscipit moderatius. moderatius. Mundi primis <br />
-                antiopam mel ea. Pro graecis commune cotidieque cu,<br />
-                et diceret splendide pro. At nam dicta recusabo <br />
-                maiestatis. Ancillae atomorum no nec.
-              </p>
-            </div>
-          </div>
-        </Parallax>
-        </Element>
+          <Element name="solutions" className="element">
+            <Parallax bgImage={image4}
+              strength={400}>
+              <div style={{ height: 700 }} class="div-left">
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                  <div class="content">
+                    <h1 class="header-size">Partners</h1>
+                    <p>Meet the organizations that help us achieve our mission</p>
+                  </div>
+                </section>
+              </div>
+            </Parallax>
+          </Element>
 
           <Partners />
 
-        <Element name="team" className="element">
-        <Parallax bgImage={image3}
-          strength={400}
-          blur={0}>
-          <div style={{ height: 700 }} class="margin-2x">
-            <div style={titleStyles}>Meet The Team</div>
-            <p style={bodyStyles}>
-              Lorem ipsum dolor sit amet, sale repudiandae in mei,<br />
-              vis ad suscipit moderatius. moderatius. Mundi primis <br />
-              antiopam mel ea. Pro graecis commune cotidieque cu,<br />
-              et diceret splendide pro. At nam dicta recusabo <br />
-              maiestatis. Ancillae atomorum no nec.
-            </p>
-          </div>
-        </Parallax>
-        </Element>
+          <Element name="team" className="element">
+            <Parallax bgImage={image3}
+              strength={400}
+              blur={0}>
+              <div style={{ height: 700 }} class="div-right">
+                <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+                  <div class="content">
+                    <h1 class="header-size">The Team</h1>
+                    <p>Meet the team, a very motivated and hardworking group of students</p>
+                  </div>
+                </section>
+              </div>
+            </Parallax>
+          </Element>
 
-        {/* <MeetTheTeam /> */}
-          <TeamLayout />
+            {/* <MeetTheTeam /> */}
+            <TeamLayout />
 
-        <Footer />
+            <Footer />
         </MuiThemeProvider>
       </div>
 
-    );
-  }
-}
-
-export default App;
+        );
+      }
+    }
+    
+    export default App;
