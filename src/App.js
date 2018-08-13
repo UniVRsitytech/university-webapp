@@ -126,23 +126,25 @@ class App extends Component {
         </Parallax> */}
           <Title />
 
-          <Parallax
-            bgImage={test1}
-            strength={400}
-            >
-            <div style={{ height: 600 }} class="div-right">
-              <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
-                <div class="content">
-                  <h1 class="header-size">About</h1>
-                  <p class="sub-header-size">Leading the industry in VR Education Technologies</p>
-                </div>
-              </section>
-            </div>
-          </Parallax>
-
-          <About />
-
           <Element name="about" className="element">
+            <Parallax
+              bgImage={test1}
+              strength={400}
+            >
+              <div style={{ height: 600 }} class="div-right">
+                <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+                  <div class="content">
+                    <h1 class="header-size">About</h1>
+                    <p class="sub-header-size">Leading the industry in VR Education Technologies</p>
+                  </div>
+                </section>
+              </div>
+            </Parallax>
+
+            <About />
+          </Element>
+
+          <Element name="solutions" className="element">
             <Parallax bgImage={test2}
               strength={300}>
               <div style={{ height: 600 }} class="div-left">
@@ -152,15 +154,17 @@ class App extends Component {
                     <p class="sub-header-size">The first multi-user education application.</p>
                   </div>
                 </section>
-          </div>
-        </Parallax>
-        </Element>
+              </div>
+            </Parallax>
 
-        <Solutions />
 
-        <Element name="solutions" className="element">
-        <Parallax bgImage={test3}
-          strength={400}>
+            <Solutions />
+          </Element>
+
+
+          <Element name="partners" className="element">
+            <Parallax bgImage={test3}
+              strength={400}>
               <div style={{ height: 700 }} class="div-right">
                 <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
                   <div class="content">
@@ -169,10 +173,10 @@ class App extends Component {
                   </div>
                 </section>
               </div>
-        </Parallax>
-        </Element>
+            </Parallax>
 
-          <Partners />
+            <Partners />
+          </Element>
 
           <Element name="team" className="element">
             <Parallax bgImage={image3}
@@ -187,16 +191,16 @@ class App extends Component {
                 </section>
               </div>
             </Parallax>
-          </Element>
 
             <TeamLayout />
+          </Element>
 
-            <Footer />
+          <Footer />
         </MuiThemeProvider>
       </div>
 
-        );
-      }
-    }
-    
-    export default App;
+    );
+  }
+}
+
+export default App;
