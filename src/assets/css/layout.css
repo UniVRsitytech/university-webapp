@@ -5,6 +5,13 @@
     width: 50%;
 }
 
+.center-video {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50% !important;
+}
+
 .padding-top-2x {
     margin-top: 16px;
 }
@@ -31,4 +38,9 @@
 
 .div-right {
     float: right;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
 }
