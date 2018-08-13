@@ -130,11 +130,11 @@ class App extends Component {
             bgImage={test1}
             strength={400}
             >
-            <div style={{ height: 900 }} class="div-left">
-              <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+            <div style={{ height: 900 }} class="div-right">
+              <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
                 <div class="content">
                   <h1 class="header-size">About</h1>
-                  <p>Leading the industry in VR Education Technologies</p>
+                  <p class="sub-header-size">Leading the industry in VR Education Technologies</p>
                 </div>
               </section>
             </div>
@@ -145,11 +145,11 @@ class App extends Component {
           <Element name="about" className="element">
             <Parallax bgImage={test2}
               strength={300}>
-              <div style={{ height: 700 }} class="div-right">
-                <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+              <div style={{ height: 700 }} class="div-left">
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                   <div class="content">
                     <h1 class="header-size">Solutions</h1>
-                    <p>The first multi-user education application.</p>
+                    <p class="sub-header-size">The first multi-user education application.</p>
                   </div>
                 </section>
           </div>
@@ -161,11 +161,11 @@ class App extends Component {
         <Element name="solutions" className="element">
         <Parallax bgImage={test3}
           strength={400}>
-              <div style={{ height: 700 }} class="div-left">
-                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+              <div style={{ height: 700 }} class="div-right">
+                <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
                   <div class="content">
                     <h1 class="header-size">Partners</h1>
-                    <p>Meet the organizations that help us achieve our mission</p>
+                    <p class="sub-header-size">Meet the organizations that help us achieve our mission</p>
                   </div>
                 </section>
               </div>
@@ -178,18 +178,17 @@ class App extends Component {
             <Parallax bgImage={image3}
               strength={400}
               blur={0}>
-              <div style={{ height: 700 }} class="div-right">
-                <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+              <div style={{ height: 700 }} class="div-left">
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                   <div class="content">
                     <h1 class="header-size">The Team</h1>
-                    <p>Meet the team, a very motivated and hardworking group of students</p>
+                    <p class="sub-header-size">Meet the team, a very motivated and hardworking group of students</p>
                   </div>
                 </section>
               </div>
             </Parallax>
           </Element>
-
-            {/* <MeetTheTeam /> */}
+          
             <TeamLayout />
 
             <Footer />
