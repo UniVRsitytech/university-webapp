@@ -16,6 +16,10 @@
     margin-top: 16px;
 }
 
+.header-size {
+    font-size: 72px;
+}
+
 .card-help {
     background-color: black;
 }

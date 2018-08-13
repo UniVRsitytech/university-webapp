@@ -145,10 +145,12 @@ class App extends Component {
         <Parallax bgImage={image2}
           strength={400}>
           <div style={{ height: 700 }}>
-            <div class="div-right">
-              <p class="margin-2x text-left">Solutions</p>
-              <br />
-            </div>
+            <section class="spotlight orient-right content-align-right image-position-center onscroll-image-fade-in">
+                  <div class="padding-2x margin-2x">
+                    <h1 class="header-size">Solutions</h1>
+                    <p>The first multi-user education application.</p>
+                  </div>
+                </section>
           </div>
         </Parallax>
         </Element>
