@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import '../../assets/css/navbar0.css';
+import '../../assets/css/nav/navbar0.css';
 
 function SimpleAppBar(props) {
   return (
@@ -13,7 +13,8 @@ function SimpleAppBar(props) {
       <AppBar position="static" color="default">
         <Toolbar>
           UniVRsity
-          <Grid container spacing={4} class='right1'>
+          <div class="right1">
+          <Grid container spacing={4}>
             <Grid item xs={3}>
               <Button>Login</Button>
             </Grid>
@@ -27,6 +28,7 @@ function SimpleAppBar(props) {
               <Button>Login</Button>
             </Grid>
           </Grid>
+          </div>
         </Toolbar>
       </AppBar>
     </div>

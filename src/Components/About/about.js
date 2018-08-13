@@ -6,9 +6,14 @@ class About extends Component {
     render() {
         return (
             <div>
-                <b>About Section</b><br/>
-                We need to clear up what goes in this section if the last section will be considered the 'about' <br/>
-                section.
+                <section class="banner fullscreen spotlight style1 ">
+                 {/* <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"> */}
+                 <div class="content">
+                  <h2>About</h2>
+                  <p>Participate in interactive activities that put you at the core of your education. Experiences include titration labs,
+                        interacative electron models, 3D physics experiments and more.</p>
+                </div>
+                </section>
             </div>
         );
     }

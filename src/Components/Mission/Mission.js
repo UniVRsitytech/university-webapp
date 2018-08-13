@@ -7,15 +7,18 @@ class Mission extends Component {
         return (
             <div id="wrapper" class="divided">
                 <section class="banner fullscreen">
-                    <b>Should this be the 'About' section instead?</b>
-                    <p>Something about Our Mission and the Company</p>
-                    <ul>
-                        <li>What is UniVRsity?</li>
-                        <li>Why choose UniVRsity?</li>
-                        <li>LCL/Pitches https://drive.google.com/drive/u/0/folders/1SfMAIpqeRqcyOfrqUUAS7tAcvGWOwaB3</li>
-                        <li>Competitor Analysis slide from pitches?</li>
-                    </ul>
-                </section>
+                {/* <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"> */}
+                <div class="content">
+                  <h2>About</h2>
+                  <p>Participate in interactive activities that put you at the core of your education. Experiences include titration labs,
+                        interacative electron models, 3D physics experiments and more.</p>
+                  <ul class="actions stacked">
+                    <li>
+                      <button class="button">Learn More</button>
+                    </li>
+                  </ul>
+                </div>
+              </section>
             </div>
         );
     }

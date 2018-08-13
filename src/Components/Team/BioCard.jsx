@@ -47,4 +47,4 @@ function SimpleMediaCard(props) {
 //   classes: PropTypes.object.isRequired,
 // };
 
-export default SimpleMediaCard;
+export default (SimpleMediaCard);

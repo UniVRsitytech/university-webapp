@@ -10,8 +10,9 @@ import Typography from '@material-ui/core/Typography';
 
 //css stylesheet
 import "../../assets/css/team.css";
+const image1 = require('../../assets/headshots/None_5YP0MST.jpg');
 
-class BioCard extends React.Component {
+class BioCardAuto extends React.Component {
 
     constructor(props) {
         super(props);
@@ -22,11 +23,11 @@ class BioCard extends React.Component {
 
     render() {
         return (
-            <div>
-                <Card raised={true} class="card">
+            <div class="card">
+                <Card>
                     <CardMedia
                         className="media"
-                        image="../../assets/media/None_5YPOMST.jpg"
+                        image={require('../../assets/headshots/' + this.props.personinfo.picture)}
                         title="Contemplative Reptile"
                     />
                     <CardContent>
@@ -37,13 +38,18 @@ class BioCard extends React.Component {
                             {this.props.personinfo.bio}
                         </Typography>
                     </CardContent>
+                    <CardContent>
+                        <Typography gutterBottom variant="headline" component="h2">
+                            hello
+                        </Typography>
+                    </CardContent>
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <button class="large" >
                             Modal
-                        </Button>
-                        <Button size="small" color="primary">
+                        </button>
+                        <button class="large" color="primary">
                             Learn More
-                        </Button>
+                        </button>
                     </CardActions>
                 </Card>
             </div>
@@ -55,4 +61,4 @@ class BioCard extends React.Component {
 //   classes: PropTypes.object.isRequired,
 // };
 
-export default BioCard;
+export default BioCardAuto;
