@@ -70,16 +70,16 @@ export const teaminfo = [
         id: 7,
         picture: "Michelle.jpg"
     },
-    // {
-    //     name: "Luis Lopez",
-    //     team: "Dev",
-    //     class: "2020",
-    //     major: "CS",
-    //     bio: "UX Designer",
-    //     modalbio: "Luis's bio",
-    //     id: 8,
-    //     picture: "Luis.jpg"
-    // },
+    {
+        name: "Luis Lopez",
+        team: "Dev",
+        class: "2020",
+        major: "CS",
+        bio: "UX Designer",
+        modalbio: "Luis's bio",
+        id: 8,
+        picture: "LuisCropped.jpg"
+    },
     {
         name: "Chloe Kuo",
         team: "Dev",
