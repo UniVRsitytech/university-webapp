@@ -20,16 +20,16 @@ export const teaminfo = [
         id: 2,
         picture: "Nicolas_Buitrago.jpg"
     },
-    {
-        name: "Justin Kuang",
-        team: "Dev",
-        class: "2020",
-        major: "CS",
-        bio: "CFO",
-        modalbio: "justin's bio",
-        id: 3,
-        picture: "stupid_justin.jpg"
-    },
+    // {
+    //     name: "Justin Kuang",
+    //     team: "Dev",
+    //     class: "2020",
+    //     major: "CS",
+    //     bio: "CFO",
+    //     modalbio: "justin's bio",
+    //     id: 3,
+    //     picture: "stupid_justin.jpg"
+    // },
     {
         name: "Dom Rigoglioso",
         team: "Dev",
