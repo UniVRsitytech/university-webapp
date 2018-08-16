@@ -12,7 +12,7 @@ class About extends Component {
                     <div class="content">
                         <h2>About Us</h2>
                         When students and tutors are forced to choose between in-person vs online tutoring they have to choose between cost vs. value.
-                        But through Virtual Reality tutoring will be both affordable and engaging. <br />
+                        But through Virtual Reality, tutoring will be both affordable and engaging. <br />
                         <br />
                         We at UniVRsity are developing the first VR tutoring application where students and
                         tutors can meet in a common room and engage in content using our interactive tools and experiences.<br />

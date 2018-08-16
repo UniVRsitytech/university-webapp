@@ -8,7 +8,7 @@ class Partners extends Component {
         const studentAgencies = './../../assets/images/studentagencies.png';
         return (
             <div>
-                <section class="spotlight style1">
+                <section class="spotlight style1 skygradient">
                     <div class="content">
                         <Grid container spacing={8}>
                             <Grid item xs={12} container spacing={24}>

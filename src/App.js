@@ -49,6 +49,10 @@ const def = require('./assets/images/pic02.jpg');
 const test1 = require('./assets/images/earthboy.jpg');
 const test2 = require('./assets/images/shinyheadset.jpg');
 const test3 = require('./assets/images/bluegirl.jpg');
+
+const stock1 = require('./assets/images/stock_dom.jpg');
+const stock2 = require('./assets/images/stock_2.png');
+
 //sparkly
 //vrgirl
 //read the following for documentation on the Parallax Component
@@ -79,22 +83,6 @@ class App extends Component {
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
-  }
-
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-
-  scrollToBottom() {
-    scroll.scrollToBottom();
-  }
-
-  scrollTo() {
-    scroll.scrollTo(100);
-  }
-
-  scrollMore() {
-    scroll.scrollMore(100);
   }
 
   handleSetActive(to) {
@@ -128,10 +116,10 @@ class App extends Component {
 
           <Element name="about" className="element">
             <Parallax
-              bgImage={test1}
-              strength={400}
+              bgImage={test3}
+              strength={500}
             >
-              <div style={{ height: 600 }} class="div-right">
+              <div style={{ height: 700 }} class="div-right">
                 <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
                   <div class="content">
                     <h1 class="header-size">About</h1>
@@ -146,8 +134,8 @@ class App extends Component {
 
           <Element name="solutions" className="element">
             <Parallax bgImage={test2}
-              strength={300}>
-              <div style={{ height: 600 }} class="div-left">
+              strength={500}>
+              <div style={{ height: 700 }} class="div-left">
                 <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                   <div class="content">
                     <h1 class="header-size">Solutions</h1>
@@ -163,13 +151,15 @@ class App extends Component {
 
 
           <Element name="partners" className="element">
-            <Parallax bgImage={test3}
-              strength={400}>
+            <Parallax bgImage={stock1}
+              strength={500}>
               <div style={{ height: 700 }} class="div-right">
-                <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+                <section class="spotlight style1 orient-right">
                   <div class="content">
+                  <div class="blueshade">
                     <h1 class="header-size">Partners</h1>
                     <p class="sub-header-size">Meet the organizations that help us achieve our mission</p>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -180,10 +170,10 @@ class App extends Component {
 
           <Element name="team" className="element">
             <Parallax bgImage={image3}
-              strength={400}
+              strength={500}
               blur={0}>
-              <div style={{ height: 700 }} class="div-left">
-                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+              <div style={{ height: 600 }} class="div-left">
+                <section class="spotlight style1 orient-left">
                   <div class="content">
                     <h1 class="header-size">The Team</h1>
                     <p class="sub-header-size">Meet the team, a very motivated and hardworking group of students</p>

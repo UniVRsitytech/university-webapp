@@ -5,7 +5,7 @@ import '../../assets/css/layout.css';
 
 // const background = require('./assets/images/bluesquares.jpg');
 
-var divstyle= {margin: '0px', height: '5em'}
+var divstyle= {margin: '0px', height: '4em'}
 
 function Title(props) {
     return (

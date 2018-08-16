@@ -75,8 +75,8 @@
   }
   
   .verticalcenter{
-    height: 5 ;
-    line-height: 5 ;
+    height: 4 ;
+    line-height: 4;
   }
   
   .Absolute-Center {
@@ -84,3 +84,12 @@
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
   }
+
+.bluetext{
+    /* color: #6DD5FA */
+    color: #008bcc;
+}
+
+.blueshade{
+    background-color: rgb(153, 223, 255, 0.8); 
+}
