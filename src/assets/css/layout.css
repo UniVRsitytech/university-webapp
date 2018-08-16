@@ -67,6 +67,12 @@
     background-image: url("../images/bluetriangles.jpg");
     /* margin: '0px' !important; */
   }
+
+  .avenuefontplain{
+    font-family: AvenueX;
+    font-size: 32pt;
+    text-align: center;
+  }
   
   .verticalcenter{
     height: 5 ;

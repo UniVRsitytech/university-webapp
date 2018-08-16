@@ -26,7 +26,7 @@ const MyComponent = () => (
     <Parallax strength={300}>
       <div>Use the background component for custom elements</div>
       <Background className="custom-bg">
-      <img src={ require('../../assets/images/logo.png') } />
+      {/* <img src={ require('../../assets/images/logo.png') } /> */}
       </Background>
     </Parallax>
   </div>

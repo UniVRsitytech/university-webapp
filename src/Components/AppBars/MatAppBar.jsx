@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-const logo = require('../../assets/images/univrsity.png');
+const logo = require('../../assets/images/logos/uniVRsity_Logo.jpg');
 
 const styles = {
     root: {

@@ -33,6 +33,7 @@ function Footer(props) {
                             </a>
                         </li>
                     </ul> */}
+                    Contact us at: univrsitytechnologies@gmail.com
                     <p>UniVRsity Technologies 2018.</p>
                 </div>
             </footer>
