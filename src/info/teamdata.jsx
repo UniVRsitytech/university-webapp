@@ -45,8 +45,8 @@ export const teaminfo = [
         name: "Frank Rodriguez",
         team: "Dev",
         class: "2020",
-        major: "CTO",
-        bio: "Developer",
+        major: "CS",
+        bio: "CTO",
         modalbio: "Frank is a rising junior studying Computer Science. Works in the Virtual Embodiment Lab to research the effect of virtual simulations on people, specifically mental health and pain tolerance. Using C#, I developed code for Unity with a team of researchers for a Winged flight simulator to study the effects of flight on anxiety. The simulation was a for the Oculus Rift and the Vive.",
         id: 5,
         picture: "frank.jpg"
@@ -56,7 +56,7 @@ export const teaminfo = [
         team: "Dev",
         class: "2020",
         major: "CS",
-        bio: "Developer",
+        bio: "Lead Developer",
         modalbio: "Anirudh is a rising Junior studying Computer Science. He works in the Virtual Embodiment Lab researching the effects of immersive Virtual Reality environments on education and mental health. He's also a drummer in Cornell's Big Red Marching Band.",
         id: 6,
         picture: "Anirudh.jpg"
