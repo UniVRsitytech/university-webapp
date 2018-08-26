@@ -7,9 +7,9 @@ export const teaminfo = [
         class: "2020",
         major: "CS",
         bio: "CEO/Co-Founder",
-        modalbio: "Nicolas Barone was mulling offers for this summer that included one from J.P. Morgan to work as a Technology Analyst. What stopped him from pursuing those offers was his belief in UniVRsity’s mission and potential impact. He could not have the project sit idle over the summer. Thus he declined all his offers, formed a team and immersed himself in Cornell’s entrepreneurship community. Nicolas will be graduating in three years in order to be able to fully focus on the development of UniVRsity.",
+        modalbio: "Nicolas is a senior studying computer science from Miami Beach, FL who has a passion for entrepreneurship. He co-founded uniVRsity, a VR tutoring company, with Nicolas Buitrago last February and went through Ithaca’s Life Changing Labs Incubator this past summer with the company. Here he learned about customer development, developing a minimum viable product, iterating on a business model, and presenting and developing a pitch deck. Nicolas Barone was mulling offers for this summer that included one from J.P. Morgan to work as a Technology Analyst. What stopped him from pursuing those offers was his belief in UniVRsity’s mission and potential impact. He could not have the project sit idle over the summer. Thus he declined all his offers, formed a team and immersed himself in Cornell’s entrepreneurship community. Nicolas will be graduating in three years in order to be able to fully focus on the development of UniVRsity.",
         id: 1,
-        picture: "Nicolas-Barone.jpg"
+        picture: "Nicolas-Barone2.jpg"
     },
     {
         name: "Nicolas Buitrago",
