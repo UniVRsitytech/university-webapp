@@ -81,15 +81,15 @@ export const teaminfo = [
         id: 8,
         picture: "LuisCropped.jpg"
     },
-    {
-        name: "Chloe Kuo",
-        team: "Dev",
-        class: "2020",
-        major: "CS",
-        bio: "Hardware Lead",
-        modalbio: "Chloe is a rising junior majoring in ECE. She has worked on the prototyping of the standalone device along with other hardware peripherals.",
-        id: 9,
-        picture: "Chloe.jpg"
-    }
+    // {
+    //     name: "Chloe Kuo",
+    //     team: "Dev",
+    //     class: "2020",
+    //     major: "CS",
+    //     bio: "Hardware Lead",
+    //     modalbio: "Chloe is a rising junior majoring in ECE. She has worked on the prototyping of the standalone device along with other hardware peripherals.",
+    //     id: 9,
+    //     picture: "Chloe.jpg"
+    // }
 ]
 
