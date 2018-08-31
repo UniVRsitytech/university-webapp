@@ -59,7 +59,7 @@ class Solutions extends Component {
                         <h2>Engaging Experiences</h2>
                         <br />
                         <p>
-                            In addition to the Interactive tools, UniVRsity will provide various engaging virtual experiences
+                            In addition to the Interactive tools, UniVRsity will provide various engaging virtual experiences.
                 </p>
                         <h5>Chemistry Laboratory</h5>
                     </div>

@@ -93,7 +93,7 @@ class BioCardAuto extends React.Component {
                     <CardMedia
                         className="media"
                         image={require('../../assets/headshots/' + this.props.personinfo.picture)}
-                        title="Contemplative Reptile"
+                        // title=""
                     />
                     {/* <Avatar alt="Avatar" src={require('../../assets/headshots/' + this.props.personinfo.picture)} className={classNames(classes.avatar, classes.bigAvatar)} /> */}
                     <CardContent>
